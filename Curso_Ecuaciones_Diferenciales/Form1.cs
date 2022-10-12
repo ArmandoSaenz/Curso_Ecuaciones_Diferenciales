@@ -36,7 +36,6 @@ namespace Curso_Ecuaciones_Diferenciales
             Grafica.Series.Add(Poblacion);
             //Add to datagridview
             dataGridView1.Rows.Add(new object[] { "", k, P0 });
-            MessageBox.Show((Grafica.Series.Last() as LineSeries).Color.R.ToString());
             plotView1.Model = Grafica;
             plotView1.InvalidatePlot(true);
         }
